@@ -208,7 +208,6 @@ const TabPanel = styled(TabPanelUnstyled)`
 const TabsList = styled(TabsListUnstyled)`
   min-width: 320px;
   background-color: #7b654d;
-  margin-bottom: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,7 +216,7 @@ const TabsList = styled(TabsListUnstyled)`
 `;
 const TopQuestions = () => {
   return (
-    <Box sx={{ marginTop: '100px' }}>
+    <Box sx={{ marginTop: '100px' }} className='main-top-question'>
       <Container>
         <TabsUnstyled defaultValue={0}>
           <TabsList>
@@ -225,7 +224,7 @@ const TopQuestions = () => {
             <Tab>নতুন প্রশ্ন </Tab>
           </TabsList>
           <TabPanel value={0}>
-            <Grid container spacing={2}>
+            <Grid container sx={{ backgroundColor: 'white', paddingTop: "20px" }}>
               <Grid item xs={12} md={4}>
                 <Box sx={{ borderRight: { xs: 'none', md: '1px solid #E4E2DF', padding: '2px 10px' } }}>
                   {data1.slice(0, 3).map(data => <Box>
@@ -262,7 +261,7 @@ const TopQuestions = () => {
                 </Box>
               </Grid>
               <Grid item xs={12} md={4}>
-                <Box sx={{ textAlign: 'left' }}>
+                <Box sx={{ textAlign: 'left', paddingLeft: '15px' }}>
                   <Typography>
                     তারিখঃ২৩/১২/২০২১
                   </Typography>
@@ -278,7 +277,7 @@ const TopQuestions = () => {
             </Grid>
           </TabPanel>
           <TabPanel value={1}>
-          <Grid container spacing={2}>
+            <Grid container  sx={{ backgroundColor: 'white', paddingTop: "20px" }}>
               <Grid item xs={12} md={4}>
                 <Box sx={{ borderRight: { xs: 'none', md: '1px solid #E4E2DF', padding: '2px 10px' } }}>
                   {data2.slice(0, 3).map(data => <Box>
@@ -314,13 +313,13 @@ const TopQuestions = () => {
                   </Box>)}
                 </Box>
               </Grid>
-              <Grid item xs={12} md={4}>
-                <Box sx={{ textAlign: 'left' }}>
+              <Grid item xs={12} md={4} sx={{order:{xs:'1',md:'3'}}}>
+                <Box sx={{ textAlign: 'left', paddingLeft: '15px'  }}>
                   <Typography>
                     তারিখঃ২৩/১২/২০২১
                   </Typography>
                   <Typography variant='h4'>
-                  সাপ,ইদুর ও অন্যান্য ক্ষতিকর প্রানি মারার বিধান  ...
+                    সাপ,ইদুর ও অন্যান্য ক্ষতিকর প্রানি মারার বিধান  ...
                   </Typography>
                   <Typography>
                     প্রশ্নঃ সাপ,ইদুর ও অন্যান্য ক্ষতিকর প্রানি মারা যাবে কি?
