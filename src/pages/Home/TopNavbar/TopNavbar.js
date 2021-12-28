@@ -9,9 +9,23 @@ import Container from '@mui/material/Container';
 import { Link } from 'react-router-dom';
 import '../../../Style/Style.css'
 import img from '../../../images/home.png'
+import { Button, Typography } from '@mui/material';
+import useFirebase from '../../../firebase/useFirebase';
+import ListDrawer from '../ListDrawer/ListDrawer';
 
 const TopNavbar = () => {
+    const [state, setState] = React.useState({ right: false });
+
+    const toggleDrawer = (anchor, open) => (event) => {
+        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+            return;
+        }
+
+        setState({ ...state, [anchor]: open });
+    };
+
     const [anchorElNav, setAnchorElNav] = React.useState(null);;
+    const { user, logOut } = useFirebase()
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
@@ -20,6 +34,9 @@ const TopNavbar = () => {
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
     };
+
+
+
     return (
         <AppBar position="static">
             <Container maxWidth="xl">
@@ -139,9 +156,16 @@ const TopNavbar = () => {
                         </Box>
                         <Link className='link' to='/'>দ্বীনী খিদমায় অংশ নিন</Link>
                         <Link className='link' to='/'>সংবাদ</Link>
+                        <Button title='এখানে ক্লিক করুন ' sx={{ color: 'white' }} onClick={toggleDrawer('right', true)}>সূচিপত্র</Button>
                     </Box>
-
-
+                    <ListDrawer
+                        toggleDrawer={toggleDrawer}
+                        state={state}
+                    ></ListDrawer>
+                    {user?.email && <Typography>
+                        <button onClick={logOut}>log out</button>
+                    </Typography>
+                    }
                 </Toolbar>
             </Container>
         </AppBar>
