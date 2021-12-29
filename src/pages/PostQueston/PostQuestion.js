@@ -17,7 +17,7 @@ const currencies = [
         label: 'আকিদা-বিশ্বাস ',
     },
     {
-        value: 'আখেরাত',
+        value: 'আখিরাত',
         label: 'আখেরাত',
     },
 ];

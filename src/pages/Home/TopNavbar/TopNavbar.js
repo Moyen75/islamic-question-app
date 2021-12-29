@@ -72,7 +72,7 @@ const TopNavbar = () => {
                             }}
                         >
                             <Box sx={{ backgroundColor: 'black', display: 'flex', flexDirection: 'column', padding: '100px', alignItems: 'center' }}>
-                                <Link onClick={handleCloseNavMenu} className='link' to='/'>প্রশ্ন করুন</Link>
+                                <Link onClick={handleCloseNavMenu} className='link' to='/ask'>প্রশ্ন করুন</Link>
                                 <Box className='dropdown'>
                                     <Link className='link' to='/dashboard/questions'>সকল প্রশ্নোত্তর <i class="fas fa-caret-down"></i></Link>
                                     <Box className='dropdown-content'>
@@ -111,7 +111,7 @@ const TopNavbar = () => {
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'space-between' }}>
                         <Link className='link' to='/'><i class="fas fa-home"></i></Link>
-                        <Link className='link' to='/'>প্রশ্ন করুন</Link>
+                        <Link className='link' to='/ask'>প্রশ্ন করুন</Link>
                         <Box className='dropdown'>
                         <Link className='link' to='/dashboard/questions'>সকল প্রশ্নোত্তর <i class="fas fa-caret-down"></i></Link>
                                     <Box className='dropdown-content'>

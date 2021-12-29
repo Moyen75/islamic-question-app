@@ -12,14 +12,14 @@ const Questions = () => {
             <Container>
                 <Grid container spacing={2}>
                     {questions?.map(q => <Grid item xs={12} md={12}>
-                        <Box sx={{ textAlign: "justify",marginY:'20px' }}>
+                        {q?.a && <Box sx={{ textAlign: "justify", marginY: '20px' }}>
                             <Typography>
                                 প্রশ্নঃ  {q?.q}
                             </Typography>
                             <Typography sx={{ marginTop: '30px' }}>
                                 উত্তরঃ {q?.a}
                             </Typography>
-                        </Box>
+                        </Box>}
                         <hr />
                     </Grid>)}
                 </Grid>

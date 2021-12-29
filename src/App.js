@@ -11,6 +11,10 @@ import Holiness from './pages/Holiness/Holiness';
 import Sin from './pages/Sin/Sin';
 import Akidah from './pages/Akidah/Akidah';
 import Akhirat from './pages/Akhirat/Akhirat';
+import AskQuestion from './pages/AskQuestion/AskQuestion';
+import AskedQuestions from './pages/AskedQuestions/AskedQuestions';
+import Adhunik from './pages/Adhunik/Adhunik'
+import Ajan from './pages/Ajan/Ajan';
 
 function App() {
   return (
@@ -21,12 +25,16 @@ function App() {
           <Route path='/login' element={<Login />}></Route>
           <Route path='/register' element={<Register />}></Route>
           <Route path='/postQuestion' element={<PostQuestion />}></Route>
+          <Route path='/ask' element={<AskQuestion />}></Route>
           <Route path='/dashboard' element={<Dashboard />}>
             <Route path='questions' element={<Questions />}></Route>
+          <Route path='asked' element={<AskedQuestions />}></Route>
             <Route path='holiness' element={<Holiness />}></Route>
             <Route path='sin' element={<Sin />}></Route>
             <Route path='akhirat' element={<Akhirat />}></Route>
             <Route path='akidah' element={<Akidah />}></Route>
+            <Route path='ajan' element={<Ajan />}></Route>
+            <Route path='adhunik' element={<Adhunik />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>
