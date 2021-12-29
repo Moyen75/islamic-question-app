@@ -29,401 +29,403 @@ const ListDrawer = ({toggleDrawer,state}) => {
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
         >
-            <List>
+            <List
+                        className='list'>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>অজু/গোসল/পবিত্রতা/হায়েজ/নেফাস (183)</ListItemText>
+                        <ListItemText>অজু/গোসল/পবিত্রতা/হায়েজ/নেফাস </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>অপরাধ ও গোনাহ (239)</ListItemText>
+                        <ListItemText>অপরাধ ও গোনাহ </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>আকিদা-বিশ্বাস (304)</ListItemText>
+                        <ListItemText>আকিদা-বিশ্বাস </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>আখেরাত (53)</ListItemText>
+                        <ListItemText>আখেরাত </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>আজান ও ইকামত (42)</ListItemText>
+                        <ListItemText>আজান ও ইকামত </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>আদব ও আখলাক (132)</ListItemText>
+                        <ListItemText>আদব ও আখলাক </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>আধুনিক মাসায়েল (261)</ListItemText>
+                        <ListItemText>আধুনিক মাসায়েল </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>আনন্দ/বিনোদন (51)</ListItemText>
+                        <ListItemText>আনন্দ/বিনোদন </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>আহলে হাদীস (645)</ListItemText>
+                        <ListItemText>আহলে হাদীস </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>ইতিহাস ও ঐতিহ্য (98)</ListItemText>
+                        <ListItemText>ইতিহাস ও ঐতিহ্য </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>ইফতা (ফাতাওয়া) বিভাগ (2)</ListItemText>
+                        <ListItemText>ইফতা (ফাতাওয়া) বিভাগ </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>ইলম/জ্ঞান/শব্দার্থ (68)</ListItemText>
+                        <ListItemText>ইলম/জ্ঞান/শব্দার্থ </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>ইলমে হাদীস (38)</ListItemText>
+                        <ListItemText>ইলমে হাদীস </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>ইসলামী আইন/শরয়ী শাস্তিবিধান (39)</ListItemText>
+                        <ListItemText>ইসলামী আইন/শরয়ী শাস্তিবিধান </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>ইসলাহী/আত্মশুদ্ধি (90)</ListItemText>
+                        <ListItemText>ইসলাহী/আত্মশুদ্ধি </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>ঈমান ও আমল (241)</ListItemText>
+                        <ListItemText>ঈমান ও আমল</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>ওয়াকফ/মসজিদ/ঈদগাহ (72)</ListItemText>
+                        <ListItemText>ওয়াকফ/মসজিদ/ঈদগাহ </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>কসম ও মান্নত (45)</ListItemText>
+                        <ListItemText>কসম ও মান্নত</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>কাদিয়ানী মতবাদ (23)</ListItemText>
+                        <ListItemText>কাদিয়ানী মতবাদ </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>কাফন-দাফন-জানাযা (72)</ListItemText>
+                        <ListItemText>কাফন-দাফন-জানাযা </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>কিতাব/বই ও লেখক পরিচিতি (32)</ListItemText>
+                        <ListItemText>কিতাব/বই ও লেখক পরিচিতি </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>কুরআন ও হাদীসের ব্যাখ্যা (94)</ListItemText>
+                        <ListItemText>কুরআন ও হাদীসের ব্যাখ্যা </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>কুরবানী/জবেহ/আকীকা (221)</ListItemText>
+                        <ListItemText>কুরবানী/জবেহ/আকীকা </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>ক্রয়-বিক্রয় (88)</ListItemText>
+                        <ListItemText>ক্রয়-বিক্রয়</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>খাদ্য-দ্রব্য (82)</ListItemText>
+                        <ListItemText>খাদ্য-দ্রব্য </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>খাব ও তাবীর/স্বপ্ন ও ব্যাখ্যা (10)</ListItemText>
+                        <ListItemText>খাব ও তাবীর/স্বপ্ন ও ব্যাখ্যা</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>খিলাফত/ইসলামী রাষ্ট্রনীতি (58)</ListItemText>
+                        <ListItemText>খিলাফত/ইসলামী রাষ্ট্রনীতি</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>খেলাধুলা/বিনোদন (57)</ListItemText>
+                        <ListItemText>খেলাধুলা/বিনোদন</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>চিকিৎসা/তদবীর (53)</ListItemText>
+                        <ListItemText>চিকিৎসা/তদবীর</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>জায়েজ নাজায়েজ (612)</ListItemText>
+                        <ListItemText>জায়েজ নাজায়েজ</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>জিহাদ ও কিতাল </ListItemText>
+                        <ListItemText>জিহাদ ও কিতাল</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>জিকির </ListItemText>
+                        <ListItemText>জিকির</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>জুমআ ও ঈদের নামায (62)</ListItemText>
+                        <ListItemText>জুমআ ও ঈদের নামায</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>তাবলীগ জামাত (116)</ListItemText>
+                        <ListItemText>তাবলীগ জামাত</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>তারীখ ও সীরাত (50)</ListItemText>
+                        <ListItemText>তারীখ ও সীরাত</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>তালাক/ডিভোর্স/হুরমত (218)</ListItemText>
+                        <ListItemText>তালাক/ডিভোর্স/হুরমত</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>তাসাউফ (50)</ListItemText>
+                        <ListItemText>তাসাউফ</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>দাওয়াত ও তাবলীগ (131)</ListItemText>
+                        <ListItemText>দাওয়াত ও তাবলীগ</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>দান-সদকা-হাদিয়া (64)</ListItemText>
+                        <ListItemText>দান-সদকা-হাদিয়া</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>দিফায়ে আকাবির (197)</ListItemText>
+                        <ListItemText>দিফায়ে আকাবির</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>দিফায়ে ইসলাম (137)</ListItemText>
+                        <ListItemText>দিফায়ে ইসলাম</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>দিফায়ে ফিক্বহে হানাফী (249)</ListItemText>
+                        <ListItemText>দিফায়ে ফিক্বহে হানাফী</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>দুআ-দরূদ ও অজীফা (112)</ListItemText>
+                        <ListItemText>দুআ-দরূদ ও অজীফা</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>নফল ইবাদত (132)</ListItemText>
+                        <ListItemText>নফল ইবাদত</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>নাম ও বংশ/নবজাতক (48)</ListItemText>
+                        <ListItemText>নাম ও বংশ/নবজাতক</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>নামায/সালাত/ইমামত (466)</ListItemText>
+                        <ListItemText>নামায/সালাত/ইমামত</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>নাস্তিকদের প্রশ্নের জবাব (60)</ListItemText>
+                        <ListItemText>নাস্তিকদের প্রশ্নের জবাব</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>নির্বাচিত (76)</ListItemText>
+                        <ListItemText>নির্বাচিত</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>পরিবার ও সামাজিকতা (106)</ListItemText>
+                        <ListItemText>পরিবার ও সামাজিকতা</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>পর্দা/দুগ্ধপান/হুরমত (85)</ListItemText>
+                        <ListItemText>পর্দা/দুগ্ধপান/হুরমত</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>পাক নাপাক (109)</ListItemText>
+                        <ListItemText>পাক নাপাক</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>পাঠক/অতিথিদের কলাম (1)</ListItemText>
+                        <ListItemText>পাঠক/অতিথিদের কলাম</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>পেশা/চাকরী (91)</ListItemText>
+                        <ListItemText>পেশা/চাকরী</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>প্রকাশিত বই (1)</ListItemText>
+                        <ListItemText>প্রকাশিত বই</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>প্রবন্ধ নিবন্ধ (407)</ListItemText>
+                        <ListItemText>প্রবন্ধ নিবন্ধ</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>প্রশ্নোত্তর (3,018)</ListItemText>
+                        <ListItemText>প্রশ্নোত্তর</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>ফযীলত ও মানাকেব (120)</ListItemText>
+                        <ListItemText>ফযীলত ও মানাকেব</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>ফাযায়েলে আমালে সালেহা (101)</ListItemText>
+                        <ListItemText>ফাযায়েলে আমালে সালেহা</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>বাহাস/মুনাজারা/বিতর্ক (2)</ListItemText>
+                        <ListItemText>বাহাস/মুনাজারা/বিতর্ক</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>বিজ্ঞান/দর্শন (4)</ListItemText>
+                        <ListItemText>বিজ্ঞান/দর্শন</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>বিধর্মী মতবাদ (44)</ListItemText>
+                        <ListItemText>বিধর্মী মতবাদ</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>বিবাহ/শাদি (156)</ListItemText>
+                        <ListItemText>বিবাহ/শাদি</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>বিবিধ (31)</ListItemText>
+                        <ListItemText>বিবিধ</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>বিভাগসমূহ (5)</ListItemText>
+                        <ListItemText>বিভাগসমূহ</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>বিশেষ নোটিশ (6)</ListItemText>
+                        <ListItemText>বিশেষ নোটিশ</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>ব্যবসা-বাণিজ্য/ভাড়া (124)</ListItemText>
+                        <ListItemText>ব্যবসা-বাণিজ্য/ভাড়া</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>ভুল ও ভ্রান্ত ধারণা নিরসন (521)</ListItemText>
+                        <ListItemText>ভুল ও ভ্রান্ত ধারণা নিরসন</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>ভ্রান্ত মতবাদ (216)</ListItemText>
+                        <ListItemText>ভ্রান্ত মতবাদ</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>মাযহাব ও তাকলীদ (306)</ListItemText>
+                        <ListItemText>মাযহাব ও তাকলীদ</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>মাস ও দিনের ফযীলত (31)</ListItemText>
+                        <ListItemText>মাস ও দিনের ফযীলত</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>মিরাস/উত্তরাধিকার (53)</ListItemText>
+                        <ListItemText>মিরাস/উত্তরাধিকার</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>মুআশারাত/নৈতিক গুণাবলী (7)</ListItemText>
+                        <ListItemText>মুআশারাত/নৈতিক গুণাবলী</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>মুখোশ উন্মোচন (348)</ListItemText>
+                        <ListItemText>মুখোশ উন্মোচন</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>মুজেজা/কারামত/কাশফ/ইলহাম (22)</ListItemText>
+                        <ListItemText>মুজেজা/কারামত/কাশফ/ইলহাম</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>মুনকিরীনে হাদীস/হাদীস অস্বিকারকারী (2)</ListItemText>
+                        <ListItemText>মুনকিরীনে হাদীস/হাদীস অস্বিকারকারী</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>যাকাত/সদকাতুল ফিতির (136)</ListItemText>
+                        <ListItemText>যাকাত/সদকাতুল ফিতির</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>রোযা/তারাবীহ/ইতিকাফ (225)</ListItemText>
+                        <ListItemText>রোযা/তারাবীহ/ইতিকাফ</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>লেনদেন (36)</ListItemText>
+                        <ListItemText>লেনদেন</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>শিয়া মতবাদ (56)</ListItemText>
+                        <ListItemText>শিয়া মতবাদ</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>শিরক ও বিদআত (147)</ListItemText>
+                        <ListItemText>শিরক ও বিদআত</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>শোক/ইদ্দত (11)</ListItemText>
+                        <ListItemText>শোক/ইদ্দত</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>সফর/মুসাফির (43)</ListItemText>
+                        <ListItemText>সফর/মুসাফির</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>সংবাদ (71)</ListItemText>
+                        <ListItemText>সংবাদ </ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>সমকালিন প্রসঙ্গ (43)</ListItemText>
+                        <ListItemText>সমকালিন প্রসঙ্গ</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>সাজসজ্জা/পোশাক পরিচ্ছেদ (84)</ListItemText>
+                        <ListItemText>সাজসজ্জা/পোশাক পরিচ্ছেদ</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>সাম্প্রতিক অডিও ভিডিও (315)</ListItemText>
+                        <ListItemText>সাম্প্রতিক অডিও ভিডিও</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>সালাফদের জীবনী (26)</ListItemText>
+                        <ListItemText>সালাফদের জীবনী</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>সালাম-মুসাফাহা/মুআনাকা (12)</ListItemText>
+                        <ListItemText>সালাম-মুসাফাহা/মুআনাকা</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>সীরাত ও মীলাদ (36)</ListItemText>
+                        <ListItemText>সীরাত ও মীলাদ</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>সুন্নতে রাসূল (112)</ListItemText>
+                        <ListItemText>সুন্নতে রাসূল</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>সেজদায়ে সাহু-সেজদায়ে তিলাওয়াত (43)</ListItemText>
+                        <ListItemText>সেজদায়ে সাহু-সেজদায়ে তিলাওয়াত</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>হক ও অধিকার (57)</ListItemText>
+                        <ListItemText>হক ও অধিকার</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>হক ও বাতিল দল (145)</ListItemText>
+                        <ListItemText>হক ও বাতিল দল</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>হজ্ব (61)</ListItemText>
+                        <ListItemText>হজ্ব</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>হাদীসের জারাহ তাদীল (155)</ListItemText>
+                        <ListItemText>হাদীসের জারাহ তাদীল</ListItemText>
                  </ListItem>
                  <ListItem button >
                              <FolderIcon />
-                        <ListItemText>হালাল ও হারাম (140)</ListItemText>
+                        <ListItemText>হালাল ও হারাম</ListItemText>
                  </ListItem>
             </List>
         </Box>
     );
     return (
         <div>
-              <React.Fragment >
-                    <Button onClick={toggleDrawer('right', true)}>right</Button>
+              <React.Fragment 
+                        className='list'>
                     <Drawer
                         anchor='right'
                         open={state['right']}
+                        className='list'
                         onClose={toggleDrawer('right', false)}
                     >
                         {list('right')}

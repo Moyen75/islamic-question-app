@@ -5,7 +5,7 @@
     margin: 0 10px;
     font-size: 14px;
     position: relative;
-    padding: 15px 5px;
+    padding: 15px 8px;
     transition: all .6s;
     z-index: 999;
 }
@@ -14,7 +14,7 @@
     background-size: 2px;
   }
   50%{
-    padding: 15px 5px;
+    padding: 15px 8px;
     background-size: 100%;
   }
 }
@@ -77,9 +77,9 @@
     background-color: #f7f0da;
     top: 0;
     bottom: 0;
-    right: 240px;
-    left: -240px;
-    border-radius: 60px;
+    right: 210px;
+    left: -210px;
+    border-radius: 70px;
     height: 100%;
     width: 100%;
     z-index: -1;

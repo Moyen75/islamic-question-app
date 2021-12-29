@@ -8,7 +8,7 @@ const Questions = () => {
     return (
         <Container>
             <Grid container spacing={2}>
-                {questions?.map(q => <Grid item xs={12} md={6}>
+                {questions?.map(q => <Grid item xs={12} md={12}>
                     <Box sx={{ textAlign: "left" }}>
                         <Typography>
                             প্রশ্নঃ  {q?.q}

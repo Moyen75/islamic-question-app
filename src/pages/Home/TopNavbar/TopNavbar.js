@@ -38,7 +38,7 @@ const TopNavbar = () => {
 
 
     return (
-        <AppBar position="static">
+        <AppBar position="static" sx={{backgroundColor:'#3AEBD7 '}}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
 
@@ -69,69 +69,63 @@ const TopNavbar = () => {
                             open={Boolean(anchorElNav)}
                             onClose={handleCloseNavMenu}
                             sx={{
-                                display: { xs: 'flex', md: 'none' }, padding: "1000px"
+                                display: { xs: 'block', md: 'none' }
                             }}
                         >
-                            <Box sx={{ backgroundColor: 'black', display: 'flex', flexDirection: 'column', width: '100%', alignItems: 'left' }}>
-                                <Link className='link' to='/'><img sx={{ width: "100%" }} src={img} alt="" /></Link>
-                                <Link className='link' to='/'>প্রশ্ন করুন</Link>
+                            <Box sx={{ backgroundColor: 'black', display: 'flex', flexDirection: 'column', padding: '100px', alignItems: 'center' }}>
+                                <Link onClick={handleCloseNavMenu} className='link' to='/'>প্রশ্ন করুন</Link>
                                 <Box className='dropdown'>
                                     <Link className='link' to='/'>প্রশ্নোত্তর <i class="fas fa-caret-down"></i></Link>
                                     <Box className='dropdown-content'>
-                                        <Link className='link' to='/'>প্রশ্নোত্তর</Link>
-                                        <Link className='link' to='/'>প্রশ্নোত্তর</Link>
-                                        <Link className='link' to='/'>প্রশ্নোত্তর</Link>
-                                        <Link className='link' to='/'>প্রশ্নোত্তর</Link>
-                                        <Link className='link' to='/'>প্রশ্নোত্তর</Link>
-                                        <Link className='link' to='/'>প্রশ্নোত্তর</Link>
-                                        <Link className='link' to='/'>প্রশ্নোত্তর</Link>
-                                        <Link className='link' to='/'>প্রশ্নোত্তর</Link>
-                                        <Link className='link' to='/'>প্রশ্নোত্তর</Link>
-                                        <Link className='link' to='/'>প্রশ্নোত্তর</Link>
-                                    </Box>
+                                <Link className='link' to='/'>অজু/গোসল/পবিত্রতা/হায়েজ/নেফাস</Link>
+                                <Link className='link' to='/'>অপরাধ ও গোনাহ</Link>
+                                <Link className='link' to='/'>আকিদা ও বিশ্বাস</Link>
+                                <Link className='link' to='/'>আখিরাত</Link>
+                                <Link className='link' to='/'>আজান ও ইকামাত</Link>
+                                <Link className='link' to='/'>আধুনিক মাসায়েল</Link>
+                                <Link className='link' to='/'>আদব ও আখলাক</Link>
+                                <Link className='link' to='/'>আনন্দ বিনোদন</Link>
+                                <Link className='link' to='/'>আহলে হাদিস</Link>
+                                <Link className='link' to='/'>ইতিহাস ও ঐতিহ্য</Link>
+                            </Box>
                                 </Box>
-                                <Link className='link' to='/'>প্রবন্ধ নিবন্ধ</Link>
+                                <Link onClick={handleCloseNavMenu} className='link' to='/'>প্রবন্ধ নিবন্ধ</Link>
 
                                 <Box className='dropdown'>
                                     <Link className='link' to='/'>অডিও ভিডিও <i class="fas fa-caret-down"></i></Link>
                                     <Box className='dropdown-content'>
-                                        <Link className='link' to='/'>অডিও ভিডিও</Link>
-                                        <Link className='link' to='/'>অডিও ভিডিও</Link>
+                                        <Link onClick={handleCloseNavMenu} className='link' to='/'>বয়ান</Link>
+                                        <Link onClick={handleCloseNavMenu} className='link' to='/'>গজল</Link>
 
                                     </Box>
                                 </Box>
-                                <Link className='link' to='/'>কিতাব</Link>
-                                <Link className='link' to='/'>প্রকাশিত বই</Link>
-                                <Box className='dropdown'>
-                                    <Link className='link' to='/'>বিভাগসমূহ <i class="fas fa-caret-down"></i></Link>
-                                    <Box className='dropdown-content'>
-                                        <Link className='link' to='/'>অডিও ভিডিও</Link>
-                                        <Link className='link' to='/'>অডিও ভিডিও</Link>
-
-                                    </Box>
-                                </Box>
+                                <Link onClick={handleCloseNavMenu} className='link' to='/'>কিতাব</Link>
+                                <Link onClick={handleCloseNavMenu} className='link' to='/'>প্রকাশিত বই</Link>
                                 <Link className='link' to='/'>দ্বীনী খিদমায় অংশ নিন</Link>
                                 <Link className='link' to='/'>সংবাদ</Link>
+                                <Box onClick={handleCloseNavMenu}>
+                                    <Button title='এখানে ক্লিক করুন ' sx={{ color: 'white' }} onClick={toggleDrawer('right', true)}>সূচিপত্র</Button>
+                                </Box>
                             </Box>
                         </Menu>
                     </Box>
 
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'space-between' }}>
                         <Link className='link' to='/'><i class="fas fa-home"></i></Link>
                         <Link className='link' to='/'>প্রশ্ন করুন</Link>
                         <Box className='dropdown'>
-                            <Link className='link' to='/'>প্রশ্নোত্তর <i class="fas fa-caret-down"></i></Link>
+                            <Link className='link' to='/'>সকল প্রশ্নোত্তর <i class="fas fa-caret-down"></i></Link>
                             <Box className='dropdown-content'>
-                                <Link className='link' to='/'>প্রশ্নোত্তর</Link>
-                                <Link className='link' to='/'>প্রশ্নোত্তর</Link>
-                                <Link className='link' to='/'>প্রশ্নোত্তর</Link>
-                                <Link className='link' to='/'>প্রশ্নোত্তর</Link>
-                                <Link className='link' to='/'>প্রশ্নোত্তর</Link>
-                                <Link className='link' to='/'>প্রশ্নোত্তর</Link>
-                                <Link className='link' to='/'>প্রশ্নোত্তর</Link>
-                                <Link className='link' to='/'>প্রশ্নোত্তর</Link>
-                                <Link className='link' to='/'>প্রশ্নোত্তর</Link>
-                                <Link className='link' to='/'>প্রশ্নোত্তর</Link>
+                                <Link className='link' to='/'>অজু/গোসল/পবিত্রতা/হায়েজ/নেফাস</Link>
+                                <Link className='link' to='/'>অপরাধ ও গোনাহ</Link>
+                                <Link className='link' to='/'>আকিদা ও বিশ্বাস</Link>
+                                <Link className='link' to='/'>আখিরাত</Link>
+                                <Link className='link' to='/'>আজান ও ইকামাত</Link>
+                                <Link className='link' to='/'>আধুনিক মাসায়েল</Link>
+                                <Link className='link' to='/'>আদব ও আখলাক</Link>
+                                <Link className='link' to='/'>আনন্দ বিনোদন</Link>
+                                <Link className='link' to='/'>আহলে হাদিস</Link>
+                                <Link className='link' to='/'>ইতিহাস ও ঐতিহ্য</Link>
                             </Box>
                         </Box>
                         <Link className='link' to='/'>প্রবন্ধ নিবন্ধ</Link>
@@ -139,21 +133,13 @@ const TopNavbar = () => {
                         <Box className='dropdown'>
                             <Link className='link' to='/'>অডিও ভিডিও <i class="fas fa-caret-down"></i></Link>
                             <Box className='dropdown-content'>
-                                <Link className='link' to='/'>অডিও ভিডিও</Link>
-                                <Link className='link' to='/'>অডিও ভিডিও</Link>
+                                <Link className='link' to='/'>বয়ান</Link>
+                                <Link className='link' to='/'>গজল</Link>
 
                             </Box>
                         </Box>
                         <Link className='link' to='/'>কিতাব</Link>
                         <Link className='link' to='/'>প্রকাশিত বই</Link>
-                        <Box className='dropdown'>
-                            <Link className='link' to='/'>বিভাগসমূহ <i class="fas fa-caret-down"></i></Link>
-                            <Box className='dropdown-content'>
-                                <Link className='link' to='/'>অডিও ভিডিও</Link>
-                                <Link className='link' to='/'>অডিও ভিডিও</Link>
-
-                            </Box>
-                        </Box>
                         <Link className='link' to='/'>দ্বীনী খিদমায় অংশ নিন</Link>
                         <Link className='link' to='/'>সংবাদ</Link>
                         <Button title='এখানে ক্লিক করুন ' sx={{ color: 'white' }} onClick={toggleDrawer('right', true)}>সূচিপত্র</Button>
@@ -162,9 +148,9 @@ const TopNavbar = () => {
                         toggleDrawer={toggleDrawer}
                         state={state}
                     ></ListDrawer>
-                    {user?.email && <Typography>
+                    {user?.email ? <Typography>
                         <button onClick={logOut}>log out</button>
-                    </Typography>
+                    </Typography> : <Link className='link' to='/login'>login</Link>
                     }
                 </Toolbar>
             </Container>
