@@ -1,7 +1,7 @@
 import { TextField } from '@mui/material';
 import React, { useState } from 'react';
-import Box from '@mui/material/Box';
 import MenuItem from '@mui/material/MenuItem';
+import Swal from 'sweetalert2';
 
 const currencies = [
     {
@@ -22,7 +22,7 @@ const currencies = [
     },
 ];
 const PostQuestion = () => {
-    const [currency, setCurrency] = React.useState('EUR');
+    const [currency, setCurrency] = React.useState('আকিদা');
     const [questions, setQuestions] = useState({})
     const handleOnBlur = e => {
         const field = e.target.name;
@@ -33,7 +33,7 @@ const PostQuestion = () => {
     }
     const handleOnSubmit = e => {
         e.preventDefault()
-        fetch('http://localhost:5000/questions', {
+        fetch('https://shielded-reaches-48639.herokuapp.com/questions', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -42,10 +42,19 @@ const PostQuestion = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                if (data.insertedId) {
+                    success()
+                    setQuestions('')
+                }
             })
     }
-
+    const success = () => {
+        Swal.fire(
+            'Good job!',
+            'Successfully posted!',
+            'success'
+        )
+    }
     const handleChange = (event) => {
         setCurrency(event.target.value);
     };
@@ -57,6 +66,7 @@ const PostQuestion = () => {
                     label="প্রশ্ন"
                     variant="standard"
                     name='q'
+                    multiline
                     maxRows={100}
                     onBlur={handleOnBlur}
                     sx={{ width: '75%' }}
@@ -66,6 +76,7 @@ const PostQuestion = () => {
                     select
                     label="Select"
                     name='category'
+                    onBlur={handleOnBlur}
                     value={currency}
                     onChange={handleChange}
                     sx={{ width: '75%' }}
