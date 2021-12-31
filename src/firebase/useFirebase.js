@@ -10,14 +10,15 @@ const useFirebase = () => {
 
     const auth = getAuth()
     // google sign in
-    const googleSignIn = (success, navigate) => {
+    const googleSignIn = (success, navigate,location) => {
         setLoading(true)
         const provider = new GoogleAuthProvider()
+        let from = location.state?.from?.pathname || "/";
         signInWithPopup(auth, provider)
             .then(result => {
                 setUser(result.user)
                 success()
-                navigate('/')
+                navigate(from)
             })
             .catch(error => {
                 setError(error.message)

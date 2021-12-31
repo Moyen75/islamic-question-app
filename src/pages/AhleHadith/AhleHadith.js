@@ -3,14 +3,13 @@ import { Box } from '@mui/system';
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../context/AuthProvider/useAuth';
 
-const Akhirat = () => {
+const AhleHadith = () => {
     const [matched, setMatched] = useState([])
-    const {questions} = useAuth()
+    const { questions } = useAuth()
     useEffect(() => {
-        const getMatched = questions?.filter(question => question.category === 'আখিরাত')
+        const getMatched = questions?.filter(question => question.category === 'আহলেহাদিস')
         setMatched(getMatched)
     }, [questions])
-    console.log(matched)
     return (
         <div>
             <Box>
@@ -48,4 +47,4 @@ const Akhirat = () => {
     );
 };
 
-export default Akhirat;
+export default AhleHadith;

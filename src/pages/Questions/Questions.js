@@ -1,11 +1,12 @@
 import { Container, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
+import useAuth from '../../context/AuthProvider/useAuth';
 import useQuestions from '../../hooks/useQuestions';
 import TopNavbar from '../Home/TopNavbar/TopNavbar';
 
 const Questions = () => {
-    const questions = useQuestions()
+    const {questions} = useAuth()
     return (
         <Box>
             <TopNavbar></TopNavbar>

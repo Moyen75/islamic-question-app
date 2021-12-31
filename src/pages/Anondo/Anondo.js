@@ -3,25 +3,16 @@ import { Box } from '@mui/system';
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../context/AuthProvider/useAuth';
 
-const Akhirat = () => {
+const Anondo = () => {
     const [matched, setMatched] = useState([])
     const {questions} = useAuth()
     useEffect(() => {
-        const getMatched = questions?.filter(question => question.category === 'আখিরাত')
+        const getMatched = questions?.filter(question => question.category === 'বিনোদন')
         setMatched(getMatched)
     }, [questions])
-    console.log(matched)
     return (
         <div>
-            <Box>
-                <Typography variant='h5'>
-                    দুঃখিতঃ কোন তথ্য পাওয়া যায়নি ।
-                </Typography>
-                <Typography variant='h5'>
-                    অনুগ্রহকরে অপেক্ষা করুন।
-                </Typography>
-            </Box>
-            {/* {
+            {
                 matched && <Box>
                     {matched ? <Box>
                         {
@@ -43,9 +34,9 @@ const Akhirat = () => {
                         </Typography>
                     </Box>}
                 </Box>
-            } */}
+            }
         </div>
     );
 };
 
-export default Akhirat;
+export default Anondo;

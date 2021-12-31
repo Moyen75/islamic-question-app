@@ -18,8 +18,32 @@ const currencies = [
     },
     {
         value: 'আখিরাত',
-        label: 'আখেরাত',
+        label: 'আখিরাত',
     },
+    {
+        value: 'আজান',
+        label: 'আজান ও ইকামাত',
+    },
+    {
+        value: 'আধুনিক',
+        label: 'আধুনিক মাসায়েল',
+    },
+    {
+        value: 'আদব',
+        label: 'আদব ও আখলাক',
+    },
+    {
+        value: 'বিনোদন',
+        label: 'আনন্দ-বিনোদন',
+    },
+    {
+        value: 'আহলেহাদিস',
+        label: 'আহলে হাদিস',
+    },
+    {
+        value: 'ইতিহাস',
+        label: 'ইতিহাস ও ঐতিহ্য',
+    }
 ];
 const PostQuestion = () => {
     const [currency, setCurrency] = React.useState('আকিদা');
@@ -59,7 +83,7 @@ const PostQuestion = () => {
         setCurrency(event.target.value);
     };
     return (
-        <div>
+        <div style={{minHeight:'100vh'}}>
             <form onSubmit={handleOnSubmit}>
                 <TextField
                     id="standard-basic"
@@ -96,6 +120,22 @@ const PostQuestion = () => {
                     name='a'
                     multiline
                     maxRows={100}
+                    onBlur={handleOnBlur}
+                    sx={{ width: '75%' }}
+                />
+                <TextField
+                    id="standard-basic"
+                    label="প্রশ্নকারীর নাম"
+                    variant="standard"
+                    name='asker'
+                    onBlur={handleOnBlur}
+                    sx={{ width: '75%' }}
+                />
+                <TextField
+                    id="standard-basic"
+                    label="উত্তরদাতা"
+                    variant="standard"
+                    name='asker'
                     onBlur={handleOnBlur}
                     sx={{ width: '75%' }}
                 />

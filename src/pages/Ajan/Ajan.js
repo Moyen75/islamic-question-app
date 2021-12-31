@@ -12,7 +12,15 @@ const Ajan = () => {
     }, [questions])
     return (
         <div>
-            {
+            <Box>
+                <Typography variant='h5'>
+                    দুঃখিতঃ কোন তথ্য পাওয়া যায়নি ।
+                </Typography>
+                <Typography variant='h5'>
+                    অনুগ্রহকরে অপেক্ষা করুন।
+                </Typography>
+            </Box>
+            {/* {
                 matched && <Box>
                     {matched ? <Box>
                         {
@@ -34,7 +42,7 @@ const Ajan = () => {
                         </Typography>
                     </Box>}
                 </Box>
-            }
+            } */}
         </div>
     );
 };
